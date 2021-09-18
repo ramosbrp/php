@@ -1,15 +1,9 @@
-<!-- Condicional Switch -->
+<!-- Loop While -->
 <?php
-    $tipo = 'texto';
-
-    switch($tipo) {
-        case 'foto':
-            echo "Exibindo $tipo...";
-        break;
-        case 'video':
-            echo "Exibindo $tipo...";
-        break;
-        case 'texto':
-            echo "Exibindo $tipo...";
+    $numero = 0;
+    
+    while($numero <10) {
+        $numero += 1;
+        echo $numero . '<br/><br/>';
     }
 ?>
