@@ -1,12 +1,15 @@
-<!-- Condicional NULL CAO -->
+<!-- Condicional Switch -->
 <?php
-    $nome = 'Bruno ';
-    $sobrenome = 'Ramos';
+    $tipo = 'texto';
 
-
-    $nomeCompleto = $nome;
-    // $nomeCompleto .= isset($sobrenome) ? $sobrenome : '';
-    $nomeCompleto .= $sobrenome ?? '';
-
-    echo $nomeCompleto 
+    switch($tipo) {
+        case 'foto':
+            echo "Exibindo $tipo...";
+        break;
+        case 'video':
+            echo "Exibindo $tipo...";
+        break;
+        case 'texto':
+            echo "Exibindo $tipo...";
+    }
 ?>
