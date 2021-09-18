@@ -1,11 +1,12 @@
-// Ternário
-echo ($idade >= 18) ?  'Maior de idade' :  'Menor de idade';
+<!-- Condicional NULL CAO -->
+<?php
+    $nome = 'Bruno ';
+    $sobrenome = 'Ramos';
 
-$menorDeIdade =  ($idade < 18) ?  true :  false;
-    if($menorDeIdade) {
-        echo 'Menor de idade';
-    } else {
-        echo 'Maior de idade';
-    }
 
+    $nomeCompleto = $nome;
+    // $nomeCompleto .= isset($sobrenome) ? $sobrenome : '';
+    $nomeCompleto .= $sobrenome ?? '';
+
+    echo $nomeCompleto 
 ?>
