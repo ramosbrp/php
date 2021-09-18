@@ -1,9 +1,11 @@
-<!-- Condicioanis IF -->
-<?php
-$idade = 18;
+// Ternário
+echo ($idade >= 18) ?  'Maior de idade' :  'Menor de idade';
 
-if ($idade >= 18) {
-    echo 'Maior de idade';
-} else if($idade <=18 && $idade >=15) {
-    echo 'Já não é mais novinho';
-};
+$menorDeIdade =  ($idade < 18) ?  true :  false;
+    if($menorDeIdade) {
+        echo 'Menor de idade';
+    } else {
+        echo 'Maior de idade';
+    }
+
+?>
