@@ -1,10 +1,6 @@
-<!-- Mesclando variáveis -->
+<!-- Arrays -->
 <?php
-    $cor = array(1 => 'Vermelho ', 2 => 'verde');
-    echo $cor[1];
-    $nome = 'Bruno ';
-    $sobrenome = 'Ramos';
-    $nomeCompleto = $nome.$sobrenome;
-    $nomeCompleto2 = "$nome $sobrenome";
-    echo $nomeCompleto;
+    $bolo1 = ['açucar', 'farinha', 'ovo', 'leite'];
+    echo "$bolo1[3] <br/>";
+    echo $bolo1[2].'<br/>'
 ?>
