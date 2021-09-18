@@ -1,6 +1,9 @@
-<!-- Arrays -->
+<!-- Operador Array Spread (7.4) -->
 <?php
-    $bolo1 = ['açucar', 'farinha', 'ovo', 'leite'];
-    echo "$bolo1[3] <br/>";
-    echo $bolo1[2].'<br/>'
+    $lista1 = ['André', 'Pedro', 'João'];
+    $lista2 = ['Maria', 'Talita', 'Cerafina'];
+
+    $lista3 = [...$lista1, ...$lista2];
+
+    print_r($lista3)
 ?>
