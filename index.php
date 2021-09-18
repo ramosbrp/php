@@ -1,9 +1,21 @@
-<!-- Operador Array Spread (7.4) -->
+<!-- Condicionais e Loops -->
+<!-- Exercício Prático (Variáveis) -->
 <?php
-    $lista1 = ['André', 'Pedro', 'João'];
-    $lista2 = ['Maria', 'Talita', 'Cerafina'];
+    $lista = [
+        'nome' => 'Bruno',
+        'idade' => 90,
+        'atributos' => [
+            'forca' => 60,
+            'agilidade' => 80,
+            'destreza' => 50
+        ],
+        "vida" => 1000,
+        "mana" => 928
+    ];
 
-    $lista3 = [...$lista1, ...$lista2];
+    echo "NOME: ".$lista['nome']."<br/>";
+    echo "FORÇA: ".$lista['atributos']['forca']."<br/>";
+    echo "VIDA: ".$lista['vida']
 
-    print_r($lista3)
+
 ?>
