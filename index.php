@@ -1,9 +1,7 @@
-<!-- Loop While -->
+<!-- Loop For -->
 <?php
-    $numero = 0;
     
-    while($numero <10) {
-        $numero += 1;
-        echo $numero . '<br/><br/>';
+    for($n = 0; $n<10; $n++) {
+        echo "<h1>$n</h1>";
     }
 ?>
