@@ -1,8 +1,10 @@
+<!-- Mesclando variáveis -->
 <?php
-    $numero = 0;
-    
-    while($numero <10) {
-        $numero += 1;
-        echo $numero . '<br/><br/>';
-    }
+    $cor = array(1 => 'Vermelho ', 2 => 'verde');
+    echo $cor[1];
+    $nome = 'Bruno ';
+    $sobrenome = 'Ramos';
+    $nomeCompleto = $nome.$sobrenome;
+    $nomeCompleto2 = "$nome $sobrenome";
+    echo $nomeCompleto;
 ?>
