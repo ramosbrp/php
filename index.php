@@ -1,21 +1,9 @@
-<!-- Condicionais e Loops -->
-<!-- Exercício Prático (Variáveis) -->
+<!-- Condicioanis IF -->
 <?php
-    $lista = [
-        'nome' => 'Bruno',
-        'idade' => 90,
-        'atributos' => [
-            'forca' => 60,
-            'agilidade' => 80,
-            'destreza' => 50
-        ],
-        "vida" => 1000,
-        "mana" => 928
-    ];
+$idade = 18;
 
-    echo "NOME: ".$lista['nome']."<br/>";
-    echo "FORÇA: ".$lista['atributos']['forca']."<br/>";
-    echo "VIDA: ".$lista['vida']
-
-
-?>
+if ($idade >= 18) {
+    echo 'Maior de idade';
+} else if($idade <=18 && $idade >=15) {
+    echo 'Já não é mais novinho';
+};
