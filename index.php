@@ -1,21 +1,10 @@
-<!-- Loop For -->
 <?php
-$ingredientes = [
-    'açucar',
-    'farinha de trigo',
-    'ovo',
-    'leite',
-    'fermento em pó'
-];
+    $traco = ' - ';
 
-foreach ($ingredientes as $chave => $valor) {
-    echo "Item " . $chave+1 . ": " . $valor . "<br/>";
-}
-
-echo '<ul>';
-foreach ($ingredientes as $ingredientes) {
-    echo '<li>' .$ingredientes. '</li>';
-};
-echo '</ul>'
-
+    for($n=0; $n<10; $n++) {
+        for($n1=0; $n1<5; $n1++) {
+            echo $traco;
+        }
+        echo "<br/>";
+    };
 ?>
