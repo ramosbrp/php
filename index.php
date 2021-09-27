@@ -1,14 +1,16 @@
 <?php
-function somar($n1, $n2, $n3=0) {
-    $total = $n1 +$n2 +$n3;
+function somar($n1, $n2, &$total) {
+    $total = $n1 +$n2;
     return $total;
 }
 
-$x = somar(1, 3);
-$y = somar(5, 3);
-$w = somar($x, $y);
+$x = 3;
+$y = 2;
+$soma = 0;
 
-echo $w;
+somar($x, $y, $soma);
+
+echo "TOTAL: ".$soma;
 
 
 ?>
