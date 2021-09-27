@@ -1,15 +1,14 @@
 <?php
-    $traco = ' - ';  
-    
+function somar($n1, $n2, $n3=0) {
+    $total = $n1 +$n2 +$n3;
+    return $total;
+}
 
-        for($n1=0; $n1<20; $n1++) {
-            
-            for($n2=0; $n2 <= $n1; $n2++) {
-                echo $traco;
+$x = somar(1, 3);
+$y = somar(5, 3);
+$w = somar($x, $y);
 
-            }
-            echo "<br/>";
-        }   
+echo $w;
 
 
 ?>
