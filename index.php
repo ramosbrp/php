@@ -1,6 +1,14 @@
 <?php
-$dizimo = fn($valor) => $valor * 0.1;
+// include('abc.php');
+require('header.php');
+// Once para impedir que puxe outra vez
+require_once('header.php');
 
-echo $dizimo(982);
 
+require('config.php');
+
+echo 'NOME DE USUÁRIO: '.$usuario.'<br/>';
+
+
+echo 'Conteúdo do site';
 ?>
