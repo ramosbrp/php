@@ -1,16 +1,19 @@
 <?php
-function somar($n1, $n2, &$total) {
-    $total = $n1 +$n2;
-    return $total;
-}
+$dizimo = function(int $valor) {
+    return $valor * 0.1;
+};
 
-$x = 3;
-$y = 2;
-$soma = 0;
+$funcao = $dizimo;
 
-somar($x, $y, $soma);
+echo $funcao(82);
 
-echo "TOTAL: ".$soma;
+$funcao = function(){
+    ...
+};
+
+algumafuncao(10, function() {
+    dklajdlaj
+})
 
 
 ?>
