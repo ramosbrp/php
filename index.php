@@ -1,19 +1,6 @@
 <?php
-$dizimo = function(int $valor) {
-    return $valor * 0.1;
-};
+$dizimo = fn($valor) => $valor * 0.1;
 
-$funcao = $dizimo;
-
-echo $funcao(82);
-
-$funcao = function(){
-    ...
-};
-
-algumafuncao(10, function() {
-    dklajdlaj
-})
-
+echo $dizimo(982);
 
 ?>
