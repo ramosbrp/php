@@ -1,14 +1,9 @@
 <?php
-// include('abc.php');
-require('header.php');
-// Once para impedir que puxe outra vez
-require_once('header.php');
+require('./templates/header.php');
 
 
-require('config.php');
 
-echo 'NOME DE USUÁRIO: '.$usuario.'<br/>';
-
-
-echo 'Conteúdo do site';
 ?>
+
+<a href="./paginas/home.php">HOME</a>
+<a href="./paginas/sobre.php">SOBRE</a>
