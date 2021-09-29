@@ -11,6 +11,7 @@ require('./templates/header.php');
 <a href="./paginas/sobre.php">SOBRE</a> <br> <br>
 
 <form action="recebedor.php" method="POST" >
+    
     <label for="">
         Nome:
         <br>
@@ -22,9 +23,11 @@ require('./templates/header.php');
     <label for="">
         Senha:
         <br>
-        <input type="password" name="idade" >
+        <input type="password" name="senha" >
     </label>
-    <br>
-    <br>
+
+    <br><br>
+
     <input type="submit" value="Enviar">
+
 </form>
